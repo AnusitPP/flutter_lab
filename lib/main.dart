@@ -62,14 +62,12 @@ class _UserProfilePageState extends State<UserProfilePage> {
             const DrawerHeader(
               decoration: BoxDecoration(color: Colors.blueGrey),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      CircleAvatar(
-                        radius: 35,
-                        backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                      ),
-                    ],
+                  CircleAvatar(
+                    radius: 35,
+                    backgroundImage: AssetImage('assets/images/avatar.jpg'),
+                    
                   ),
                   SizedBox(height: 10,),
                   Text("Todo List"),
