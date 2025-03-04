@@ -59,12 +59,25 @@ class _UserProfilePageState extends State<UserProfilePage> {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            ListTile(
-              title: Text("Profile Page"),
-              onTap: () {
-                
-              },
-            )
+            const DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blueGrey),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 35,
+                        backgroundImage: AssetImage('assets/images/avatar.jpg'),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10,),
+                  Text("Todo List"),
+                ],
+              ),
+            ),
+            ListTile(title: Text("Profile Page"), onTap: () {}),
+            ListTile(title: Text("Todo List"), onTap: () {}),
           ],
         ),
       ),
