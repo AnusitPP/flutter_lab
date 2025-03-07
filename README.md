@@ -39,7 +39,7 @@
      ```
 Restart
 
-   - ลบไฟล์ Git Configuration:
+   - รีสตาร์ท Flutter และ รันใหม่
      ```sh
      flutter clean
      flutter pub get
