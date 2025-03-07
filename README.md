@@ -27,16 +27,7 @@
      ```sh
      flutter run -d chrome
      ```
-4. ลบการเชื่อมต่อgit
 
-   - ลบไฟล์ Git Configuration:
-     ```sh
-     rm -rf .git
-     ```
-   - ยกเลิกการเชื่อมต่อจาก GitHub (หรือ Git remote อื่นๆ):
-     ```sh
-     git remote remove origin
-     ```
 Restart
 
    - รีสตาร์ท Flutter และ รันใหม่
