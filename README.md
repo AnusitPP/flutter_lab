@@ -37,7 +37,14 @@
      ```sh
      git remote remove origin
      ```
+Restart
 
+   - ลบไฟล์ Git Configuration:
+     ```sh
+     flutter clean
+     flutter pub get
+     flutter run
+     
 ## 🛠️ เทคโนโลยีที่ใช้
 - Flutter
 - Dart
