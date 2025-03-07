@@ -9,6 +9,7 @@
    ```sh
    git clone https://github.com/AnusitPP/flutter_lab.git
    cd flutter_lab
+   code .
    ```
 
 2. **ติดตั้ง Dependencies**
