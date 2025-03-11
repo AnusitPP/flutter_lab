@@ -28,6 +28,11 @@
      ```sh
      flutter run -d chrome
      ```
+ **ลบ Git**
+
+   - ลบ Git:
+     ```sh
+     winget uninstall --id Git.Git -e --source winget
 
 Restart
 
