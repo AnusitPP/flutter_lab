@@ -1,3 +1,4 @@
+import 'drawer.dart';
 import 'package:flutter/material.dart';
 
 class TodolistPage extends StatelessWidget{
@@ -9,6 +10,7 @@ class TodolistPage extends StatelessWidget{
       appBar: AppBar(
         title: Text("Todolist"),
       ),
+      drawer: CustomDrawer(),
       body: Center(
         child: Text("Todolist Page"),
       ),

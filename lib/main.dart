@@ -1,6 +1,6 @@
+import 'drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'todolist.dart';
 
 void main() {
   runApp(const MainApp());
@@ -56,7 +56,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
         title: const Text('User Profile'),
         backgroundColor: Colors.blue,
       ),
-      
+      drawer: CustomDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
