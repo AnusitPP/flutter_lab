@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'todolist.dart';
 
 void main() {
   runApp(const MainApp());
@@ -55,30 +56,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
         title: const Text('User Profile'),
         backgroundColor: Colors.blue,
       ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.blueGrey),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  CircleAvatar(
-                    radius: 35,
-                    backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                    
-                  ),
-                  SizedBox(height: 10,),
-                  Text("Todo List"),
-                ],
-              ),
-            ),
-            ListTile(title: Text("Profile Page"), onTap: () {}),
-            ListTile(title: Text("Todo List"), onTap: () {}),
-          ],
-        ),
-      ),
+      
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
