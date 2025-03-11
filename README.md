@@ -9,6 +9,7 @@
    ```sh
    git clone https://github.com/AnusitPP/flutter_lab.git
    cd flutter_lab
+   code .
    ```
 
 2. **ติดตั้ง Dependencies**
@@ -28,6 +29,14 @@
      flutter run -d chrome
      ```
 
+Restart
+
+   - รีสตาร์ท Flutter และ รันใหม่
+     ```sh
+     flutter clean
+     flutter pub get
+     flutter run
+     
 ## 🛠️ เทคโนโลยีที่ใช้
 - Flutter
 - Dart
