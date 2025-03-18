@@ -5,7 +5,7 @@ class Todo {
 
   Todo({this.id, required this.task, required this.isCompleted});
 
-  // ฟังก์ชันนี้ใช้ในการแปลงข้อมูล Todo ให้อยู่ในรูปแบบของ Map
+  // ฟังก์ชันนี้ใช้ในการแปลงข้อมูล Todo ให้อยู่ในรูปแบบของ Map (json)
   Map<String, dynamic> toMap() {
     return {
       'id': id, // เก็บ id ของ Todo

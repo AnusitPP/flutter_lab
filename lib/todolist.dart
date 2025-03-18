@@ -1,3 +1,6 @@
+import 'package:firstapp/database_helper.dart';
+import 'package:firstapp/todo.dart';
+
 import 'drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +12,29 @@ class TodolistPage extends StatefulWidget{
 }
 
 class _TodolistPageState extends State<TodolistPage> {
+  late Future<List<Todo>> _todolist;
+  Future<List<Todo>> _fetchTodos() async {
+    return await DatabaseHelper().getTodos();
+  }
+  void _addTodo(){
+    TextEditingController _todoController = TextEditingController();
+    showDialog(context: context, builder: (context){
+      return AlertDialog(
+        title: Text("Add Todo"),
+        content: TextField(
+          controller: _todoController,
+          decoration: InputDecoration(hintText: 'Enter Todo'),
+        ),
+        actions: [
+          TextButton(
+            onPressed: (){
+              Navigator.pop(context);
+            }, child: const Text("บันทึก"),
+            ),
+        ],
+      );
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,8 +52,8 @@ class _TodolistPageState extends State<TodolistPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-
-        },child: Icon(Icons.more_horiz_rounded,)
+          _addTodo();
+        },child: Icon(Icons.add)
         ),
     );
   }
